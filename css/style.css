@@ -1,15 +1,359 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', 'Arial', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #ffffff;
+  background-color: #8996a6;
+  box-sizing: border-box;
+}
+
 .visually-hidden {
-    position: absolute;
-    clip: rect(0 0 0 0);
-    widows: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    overflow: hidden;
+  position: absolute;
+  clip: rect(0 0 0 0);
+  widows: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  overflow: hidden;
 }
 
 .hidden {
-    display: none;
+  display: none;
 }
 
+.text-field {
+  line-height: 24px;
+  color: #999999;
+  background-color: #ffffff;
+  border: 1px solid rgba(178, 178, 178, 0.52);
+  border-radius: 5px;
+}
+
+
+.btn {
+  padding: 14px 19px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  color: #ffffff;
+  text-decoration: none;
+  background-image: linear-gradient(0, #e74a35, #f26843);
+  border-radius: 30px;
+  border: none;
+  box-shadow: 0 2px 2px 0 rgba(172, 16, 0, 0.64);
+}
+.btn:hover {
+  box-shadow: 0px 1px 2px 0 #ac1000;
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), linear-gradient(to top, #e74a35, #f26843);
+}
+
+.btn:active {
+  box-shadow: inset 0px 2px 2px 0 #942718;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.07), rgba(0, 0, 0, 0.07)), linear-gradient(to top, #e74a35, #f26843);
+}
+/*HEADER*/
+
+.nav-list,
+.top-btn-list {
+  list-style: none;
+}
+
+.nav-link,
+.top-btn {
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.top-btn {
+  background-color:rgba(255, 255, 255, 0.2);
+  border: none;
+  border-radius: 15px;
+  height: 33px;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: #333333;
+  background-color: #ffffff;
+  text-decoration: none;
+}
+
+.top-btn:hover,
+.top-btn:focus {
+  color: #323232;
+  background-color: #ffffff;
+}
+
+.breadcrumbs {
+  list-style: none;
+}
+
+.breadcrumbs-item, .breadcrumbs-link {
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
+}
+
+.header-contact {
+  text-align: right;
+  font-weight: 700;
+}
+
+.header-contact-time {
+  font-style: 14px;
+  line-height: 16px;
+}
+.header-contact-tel {
+  font-size: 22px;
+  line-height: 24px;
+}
+
+/*MAIN*/
+
+.slider {
+  text-align: center;
+}
+
+.slider h2 {
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 60px;
+}
+
+.slider-btn-list {
+  list-style: none;
+}
+
+.slider-btn {
+  width: 21px;
+  height: 21px;
+  border: none;
+  border-radius: 50%;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+}
+
+.slider-btn--on {
+  background-image: url('/img/icons/sl-btn-on.svg');
+}
+
+.slider-btn--off {
+  background-image: url('/img/icons/sl-btn-off.svg');
+}
+.slider-btn--off:hover {
+  background-image: url('/img/icons/sl-btn-hover.svg');
+}
+
+.hot-offer {
+  width: 560px;
+  height: 229px;
+  border-radius: 15px;
+  background-color: gray;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
+.hot-offer-header {
+  font-size: 35px;
+  font-weight: 700;
+  line-height: 41px;
+}
+
+.hot-offer-descr {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 22px;
+}
+
+.hot-offer--raspberries {
+  background-image: url('/img/backgrounds/raspberries.jpg');
+  
+}
+
+.hot-offer--shocolate {
+  background-image: url('/img/backgrounds/choco-chips.jpg');
+}
+
+/*PRODUCT*/
+
+.products-list {
+  list-style: none;
+}
+
+.product {
+  text-align: center;
+}
+
+.product-price {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 45px;
+  text-align: left;
+}
+.product-price span {
+  font-size: 45px;
+}
+
+.product-link {
+  color: #ffffff;
+  font-weight: 500;
+}
+
+/*STORE-DESC*/
+
+.store-desc{
+  width: 1146px;
+  height: 306px;
+  border-radius: 15px;
+  color: #323232;
+  background-image: url('/img/backgrounds/wafer.jpg');
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+.store-desc-header {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 30px;
+  
+}
+
+.store-desc-list {
+  list-style: none;
+}
+
+/*NEWS*/
+
+.news{
+  width: 560px;
+  height: 220px;
+  color: #323232;
+  border-radius: 15px;
+  background-image: url('/img/backgrounds/strawberry.jpg');
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
+.news-header {
+  font-weight: 500;
+}
+
+.news-link {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+  color: #323232;
+}
+
+/*MAILING*/
+
+.mailing{
+  width: 560px;
+  height: 220px;
+  color: #5a5a5a;
+  background-image: url('/img/backgrounds/bg-post.svg');
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  padding: 4px 5px 5px 5px;
+}
+
+.mailing-inner{
+  width: 549px;
+  height: 211px;
+  border-radius: 10px;
+  background-color: #f8f7f4;
+  border: 1px solid #f8f7f4;
+}
+
+
+
+/*MAP*/
+
+.map-descr {
+  color: #323232;
+}
+.map-label {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.map-content {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+/*PAGINATION*/
+
+.pagination-list {
+  list-style: none;
+}
+
+.pagination-item, .pagination-link {
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+/*FOOTER*/
+
+.social-list, .additionally-list {
+  list-style: none;
+}
+
+.social-icon {
+  display: inline-block;
+  width: 38px;
+  height: 38px;
+  border: 3px solid rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+ 
+}
+.social-icon--tw {
+  background: url("/img/icons/social/twitter.svg") no-repeat;
+  background-size: 100%;
+}
+.social-icon--tw:hover {
+  opacity: 0.8;
+}
+
+.additionally-link {
+  font-size: 13px;
+  line-height: 16px;
+  color: #ffffff;
+}
+
+.additionally-link--bold{
+  font-weight: 700;
+}
+
+.madein-descr, .madein-link {
+  font-size: 12px;
+  color: #fefefe;
+}
+
+.modal-feedback h2 {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 28px;
+  color: #323232;
+}
+
+.modal-feedback-message {
+  width: 428px;
+  height: 155px;
+  color: #999999;
+  line-height: 24px;
+  background-color: #ffffff;
+  border: 1px solid rgba(178, 178, 178, 0.52);
+  border-radius: 5px;
+}
