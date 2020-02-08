@@ -144,14 +144,14 @@ body{
 }
 
 .slider-btn--on {
-  background-image: url('/img/icons/sl-btn-on.svg');
+  background-image: url('../img/icons/sl-btn-on.svg');
 }
 
 .slider-btn--off {
-  background-image: url('/img/icons/sl-btn-off.svg');
+  background-image: url('../img/icons/sl-btn-off.svg');
 }
 .slider-btn--off:hover {
-  background-image: url('/img/icons/sl-btn-hover.svg');
+  background-image: url('../img/icons/sl-btn-hover.svg');
 }
 
 .hot-offer {
@@ -176,12 +176,12 @@ body{
 }
 
 .hot-offer--raspberries {
-  background-image: url('/img/backgrounds/raspberries.jpg');
+  background-image: url('../img/backgrounds/raspberries.jpg');
   
 }
 
 .hot-offer--shocolate {
-  background-image: url('/img/backgrounds/choco-chips.jpg');
+  background-image: url('../img/backgrounds/choco-chips.jpg');
 }
 
 /*PRODUCT*/
@@ -216,7 +216,7 @@ body{
   height: 306px;
   border-radius: 15px;
   color: #323232;
-  background-image: url('/img/backgrounds/wafer.jpg');
+  background-image: url('../img/backgrounds/wafer.jpg');
   background-position: 0 0;
   background-repeat: no-repeat;
 }
@@ -238,7 +238,7 @@ body{
   height: 220px;
   color: #323232;
   border-radius: 15px;
-  background-image: url('/img/backgrounds/strawberry.jpg');
+  background-image: url('../img/backgrounds/strawberry.jpg');
   background-position: 0 0;
   background-repeat: no-repeat;
 }
@@ -260,7 +260,7 @@ body{
   width: 560px;
   height: 220px;
   color: #5a5a5a;
-  background-image: url('/img/backgrounds/bg-post.svg');
+  background-image: url('../img/backgrounds/bg-post.svg');
   background-position: 0 0;
   background-repeat: no-repeat;
   padding: 4px 5px 5px 5px;
@@ -319,7 +319,7 @@ body{
  
 }
 .social-icon--tw {
-  background: url("/img/icons/social/twitter.svg") no-repeat;
+  background: url("../img/icons/social/twitter.svg") no-repeat;
   background-size: 100%;
 }
 .social-icon--tw:hover {
