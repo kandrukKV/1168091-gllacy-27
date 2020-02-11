@@ -8,7 +8,7 @@ body{
   font-size: 16px;
   line-height: 22px;
   color: #ffffff;
-  
+  background-color: #8996a6;
   box-sizing: border-box;
 }
 .wrap {
@@ -118,7 +118,7 @@ body{
 }
 .nav-link:active {
   box-shadow: inset 0 2px 1px 0 #696969;
-  background-color: #ededed;  
+  background-color: #ededed;
 }
 
 .nav-select {
@@ -315,7 +315,7 @@ body{
 
 .hot-offer--raspberries {
   background-image: url('../img/backgrounds/raspberries.jpg');
-  
+
 }
 
 .hot-offer--shocolate {
@@ -331,8 +331,39 @@ body{
   justify-content: space-between;
 }
 
+.form-filter {
+  display: flex;
+  width: 860px;
+  flex-wrap: wrap;
+}
+
 .filter-block {
+  padding: 0;
+  margin: 0;
   border: none;
+}
+.filter-block--sort {
+  width: 194px;
+}
+.filter-block--price {
+  width: 220px;
+}
+.filter-block--fit {
+  width: 415px;
+}
+.filter-block--fit ul {
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.filter-block--additives {
+  width: 703px;
+}
+.filter-block--additives ul {
+  padding: 0;
+  margin: 0;
+  display: flex;
 }
 
 .filter-block ul {
@@ -409,7 +440,7 @@ body{
   font-size: 24px;
   font-weight: 500;
   line-height: 30px;
-  
+
 }
 
 .store-desc-list {
