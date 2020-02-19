@@ -46,6 +46,11 @@ img {
   overflow: hidden;
 }
 
+.hr {
+  height: 1px;
+  background-color: rgba(248, 247, 244, 0.3);
+}
+
 .text-field {
   line-height: 24px;
   height: 44px;
@@ -224,6 +229,9 @@ img {
 .top-btn-item:hover .form-enter {
   display: block;
 }
+.top-btn-item:hover .basket {
+  display: block;
+}
 
 .top-btn-item{
   margin-left: 10px;
@@ -233,7 +241,8 @@ img {
   color: #323232;
   background-color: #ffffff;
 }
-.top-btn:hover g{
+.top-btn:hover,
+.top-btn:focus g{
   fill: black;
 }
 
@@ -286,25 +295,82 @@ img {
   /*BASKET*/
 
 .basket {
+  display: none;
+  position: absolute;
+  right: 0;
+  text-align: right;
+  padding: 20px 15px;
   width: 540px;
   background-color: #f8f7f4;
   border-radius: 5px;
 }
+.basket td {
+  padding-bottom: 20px;
+}
+.basket-list {
+  width: 100%;
+  text-align: center;
+}
 .basket-item {
+  padding-bottom: 20px;
   font-size: 13px;
   line-height: 16px;
+  vertical-align: top;
   color: #323232;
+}
+.hr--basket {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.basket-name {
+  width: 250px;
+  text-align: left;
 }
 .basket-price span {
   color: #999999;
 }
+.basket-name,
+.basket-price,
+.basket-cost,
+.basket-btn {
+  padding-top: 11px;
+
+}
 .basket-total {
-  text-align: right;
+  margin: 0;
+  margin-top: 17px;
+  margin-bottom: 17px;
   font-size: 15px;
   line-height: 18px;
   font-weight: 700;
   color: #323232;
+}
+.btn-del {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+.btn-del:hover path,
+.btn-del:focus path {
+  fill: rgba(232, 77, 55, 0.3);
+}
 
+.basket .btn {
+  display: inline-block;
+  padding: 13px 14px;
+}
+.basket-link {
+  color: #323232;
+  text-decoration: none;
+}
+.basket-link:hover,
+.basket-link:focus,
+.basket-link:active {
+  color: #e84d37;
+}
+.basket-link:hover span,
+.basket-link:focus span,
+.basket-link:active span {
+  border-bottom: 1px solid rgba(232, 77, 55, 0.3);
 }
 
 .heder-bottom {
@@ -552,7 +618,7 @@ img {
   appearance: none;
 }
 .filter-sort:hover .filter-sort-list,
-.filter-sort:active .filter-sort-list{
+.filter-sort:focus .filter-sort-list {
   background-color: #ffffff;
   color: #000000;
 }
@@ -626,6 +692,7 @@ img {
 .radio-label {
   position: relative;
   padding-left: 32px;
+  opacity: 0.8;
 }
 .radio-label::before {
   position: absolute;
@@ -637,7 +704,11 @@ img {
   height: 25px;
   background-image: url("../img/icons/radio-off.svg");
   background-repeat: no-repeat;
-  opacity: 0.8;
+
+}
+.radio-label:hover,
+.radio-label:focus {
+  opacity: 1;
 }
 .radio-input:checked + .radio-label::before {
   background-image: url("../img/icons/radio-on.svg");
@@ -1008,10 +1079,6 @@ img {
   transform: rotate(180deg);
 }
 
-.hr {
-  height: 1px;
-  background-color: rgba(248, 247, 244, 0.3);
-}
 
 /*FOOTER*/
 
