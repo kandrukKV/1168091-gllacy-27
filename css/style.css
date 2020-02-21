@@ -1271,12 +1271,17 @@ img {
   width: 428px;
   height: 155px;
   padding-left: 15px;
-  color: #999999;
+  color: #323232;
+  font-weight: 700;
   line-height: 24px;
   background-color: #ffffff;
   border: 1px solid rgba(178, 178, 178, 0.52);
   border-radius: 5px;
   resize: none;
+}
+.modal-feedback-message::placeholder {
+  color: #999999;
+  font-weight: 400;
 }
 .modal-feedback-message:hover {
   border: 2px solid rgba(154, 154, 154, 0.52);
