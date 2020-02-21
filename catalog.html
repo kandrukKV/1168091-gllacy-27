@@ -128,11 +128,11 @@
           <div class="header-bottom-left">
             <ul class="breadcrumbs">
               <li class="breadcrumbs-item">
-                <a class="breadcrumbs-link" href="index.html">Главная</a>
+                <a class="breadcrumbs-link" href="index.html"><span>Главная</span></a>
                 <span>»</span>
               </li>
               <li class="breadcrumbs-item">
-                <a class="breadcrumbs-link" href="catalog.html">Каталог</a>
+                <a class="breadcrumbs-link" href="catalog.html"><span>Каталог</span></a>
                 <span>»</span>
               </li>
               <li class="breadcrumbs-item">Сливочное</li>
@@ -182,21 +182,33 @@
                 <fieldset class="filter filter--fit">
                   <legend class="filter-subtitle">Жирность:</legend>
                   <ul class="filter-body">
-                    <li class="radio">
-                      <input class="radio-input" id="milk1" type="radio" name="milk-fat" value="1">
-                      <label class="radio-label" for="milk1">0%</label>
+                    <li  class="radio-item">
+                      <label class="radio-label" for="milk1">
+                        <input class="radio-input visually-hidden" id="milk1" type="radio" name="milk-fat" value="1">
+                        <span class="radio-indicator"></span>
+                        0%
+                      </label>
                     </li>
-                    <li>
-                      <input class="radio-input" id="milk2" type="radio" name="milk-fat" value="2">
-                      <label class="radio-label" for="milk2">до 10%</label>
+                    <li class="radio-item">
+                      <label class="radio-label" for="milk2">
+                        <input class="radio-input visually-hidden" id="milk2" type="radio" name="milk-fat" value="2">
+                        <span class="radio-indicator"></span>
+                        до 10%
+                      </label>
                     </li>
-                    <li class="radio">
-                      <input class="radio-input" id="milk3" type="radio" name="milk-fat" value="3">
-                      <label class="radio-label" for="milk3">до 30%</label>
+                    <li class="radio-item">
+                      <label class="radio-label" for="milk3">
+                        <input class="radio-input visually-hidden" id="milk3" type="radio" name="milk-fat" value="3">
+                        <span class="radio-indicator"></span>
+                        до 30%
+                      </label>
                     </li>
-                    <li class="radio">
-                      <input class="radio-input" id="milk4" type="radio" name="milk-fat" value="4">
-                      <label class="radio-label" for="milk4">выше 30%</label>
+                    <li class="radio-item">
+                      <label class="radio-label" for="milk4">
+                        <input class="radio-input visually-hidden" id="milk4" type="radio" name="milk-fat" value="4">
+                        <span class="radio-indicator"></span>
+                        выше 30%
+                      </label>
                     </li>
                   </ul>
                 </fieldset>
@@ -204,25 +216,38 @@
                 <fieldset class="filter filter--additives">
                   <legend class="filter-subtitle">Наполнители:</legend>
                   <ul class="filter-body">
-                    <li class="checkbox">
-                        <input class="checkbox-input" type="checkbox" name="choco" id="checkChoco">
-                        <label class="checkbox-label" for="checkChoco">шоколадные</label>
+                    <li class="checkbox-item">
+                      <label class="checkbox-label" for="checkChoco">
+                        <input class="checkbox-input visually-hidden" type="checkbox" name="choco" id="checkChoco">
+                        <span class="checkbox-indicator"></span>
+                        шоколадные
+                      </label>
                     </li>
-                    <li class="checkbox">
-                        <input class="checkbox-input" type="checkbox" name="shugar" id="checkShugar">
-                        <label class="checkbox-label" for="checkShugar">сахарные присыпки</label>
+                    <li class="checkbox-item">
+                      <label class="checkbox-label" for="checkShugar">
+                        <input class="checkbox-input visually-hidden visually-hidden" type="checkbox" name="shugar" id="checkShugar">
+                        <span class="checkbox-indicator"></span>
+                        сахарные присыпки
+                      </label>
                     </li>
-                    <li class="checkbox">
-                        <input class="checkbox-input" type="checkbox" name="fruit" id="checkFruit">
-                        <label class="checkbox-label" for="checkFruit">фрукты</label>
+                    <li class="checkbox-item">
+                      <label class="checkbox-label" for="checkFruit">фрукты
+                        <input class="checkbox-input visually-hidden" type="checkbox" name="fruit" id="checkFruit">
+                        <span class="checkbox-indicator"></span>
+                      </label>
                     </li>
-                    <li class="checkbox">
-                        <input class="checkbox-input" type="checkbox" name="syrup" id="checkSyrup">
-                        <label class="checkbox-label" for="checkSyrup">сиропы</label>
+                    <li class="checkbox-item">
+                      <label class="checkbox-label" for="checkSyrup">сиропы
+                        <input class="checkbox-input visually-hidden" type="checkbox" name="syrup" id="checkSyrup">
+                        <span class="checkbox-indicator"></span>
+                      </label>
                     </li>
-                    <li class="checkbox">
-                        <input class="checkbox-input" type="checkbox" name="jam" id="checkJam">
-                        <label class="checkbox-label" for="checkJam">джемы</label>
+                    <li class="checkbox-item">
+                      <label class="checkbox-label" for="checkJam">
+                        <input class="checkbox-input visually-hidden" type="checkbox" name="jam" id="checkJam">
+                        <span class="checkbox-indicator"></span>
+                        джемы
+                      </label>
                     </li>
                   </ul>
                 </fieldset>
@@ -351,19 +376,19 @@
           <h2 class="visually-hidden">Навигация по страницам</h2>
           <ul class="pag-list">
             <li class="pag-item">
-              <a class="pag-link pag-link--prev" href="">
+              <a class="pag-link pag-link-prev pag-link--disabled">
                 <svg xmlns="http://www.w3.org/2000/svg" width="8" height="12" viewBox="0 0 8 12">
                   <path fill="#C1C6CE" d="M7.237 5.642L1.73.132c-.2-.197-.52-.197-.717 0s-.198.52 0 .717L6.163 6l-5.15 5.15c-.2.198-.2.52 0 .717.098.1.228.148.357.148.13 0 .26-.05.358-.148l5.51-5.51c.198-.197.198-.517 0-.715z"/>
                 </svg>
               </a>
             </li>
-            <li class="pag-item"><a class="pag-link pag-link--active">1</a></li>
+            <li class="pag-item"><a class="pag-link pag-link--current">1</a></li>
             <li class="pag-item"><a class="pag-link" href="#">2</a></li>
             <li class="pag-item"><a class="pag-link" href="#">3</a></li>
             <li class="pag-item"><a class="pag-link" href="#">4</a></li>
             <li class="pag-item"><a class="pag-link" href="#">5</a></li>
             <li class="pag-item">
-              <a class="pag-link pag-link--next" href="#">
+              <a class="pag-link pag-link-next" href="#">
                 <svg xmlns="http://www.w3.org/2000/svg" width="8" height="12" viewBox="0 0 8 12">
                   <path fill="#C1C6CE" d="M7.237 5.642L1.73.132c-.2-.197-.52-.197-.717 0s-.198.52 0 .717L6.163 6l-5.15 5.15c-.2.198-.2.52 0 .717.098.1.228.148.357.148.13 0 .26-.05.358-.148l5.51-5.51c.198-.197.198-.517 0-.715z"/>
                 </svg>
