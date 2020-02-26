@@ -226,6 +226,7 @@ img {
   border: none;
   border-radius: 15px;
   color: #ffffff;
+  text-decoration: none;
   font-weight: 500;
   line-height: 16px;
   font-size: 14px;
@@ -480,7 +481,7 @@ img {
   position: relative;
   display: block;
   margin: 0 auto;
-  margin-top: -606px;
+  margin-top: -595px;
 
 }
 .slider-slide h2 {
@@ -488,7 +489,7 @@ img {
   z-index: 1;
   margin: 0 auto;
   margin-top: 434px;
-  margin-bottom: 30px;
+  margin-bottom: 38px;
   width: 680px;
   font-size: 60px;
   line-height: 60px;
@@ -497,14 +498,14 @@ img {
 .slider-slide .btn{
   position: relative;
   z-index: 1;
-  padding: 10px 40px;
+  padding: 12px 40px;
   font-size: 32px;
   line-height: 44px;
 }
 .slider-controls {
   position: absolute;
   left: 0;
-  bottom: 300px;
+  bottom: 297px;
   z-index: 5;
 }
 .slider-controls label {
@@ -565,6 +566,7 @@ img {
 }
 .hot-offer-header {
   margin: 0;
+  margin-bottom: 13px;
   text-align: left;
   font-size: 35px;
   font-weight: 700;
@@ -572,15 +574,15 @@ img {
 }
 .hot-offer-descr {
   margin: 0;
-  margin-top: 15px;
+  margin-bottom: 45px;
   text-align: left;
   font-size: 18px;
   font-weight: 700;
   line-height: 22px;
 }
 .hot-offer .btn {
-  margin-top: 43px;
-  padding: 0 22px;
+
+  padding: 10px 22px;
   height: 46px;
 }
 .hot-offer--raspberries {
@@ -902,9 +904,8 @@ img {
 .product .btn {
   display: none;
   position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  bottom: 22px;
+  left: 30px;
+  bottom: 20px;
   padding: 13px 17px;
 }
 
@@ -1039,7 +1040,7 @@ img {
   margin: 0 auto;
   position: relative;
 }
-.map-img {
+.map-img, .map iframe {
   position: absolute;
   top: 0;
   left: 50%;
@@ -1078,8 +1079,8 @@ img {
 .map-pin {
   position: absolute;
   z-index: 5;
-  top: 138px;
-  left: 50%;
+  top: 140px;
+  left: 615px;
 }
 .map .btn {
   padding: 10px 27px;
