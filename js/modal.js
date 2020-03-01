@@ -16,7 +16,7 @@ var isStoreSupport = true; //поддержка localStorage
 try {
   userName = localStorage.getItem('userName');
   email = localStorage.getItem('email');
-} catch {
+} catch(e) {
   isStoreSupport = false;
 }
 

@@ -18,13 +18,14 @@ img {
 }
 
 .wrapper {
-  background-color: #849d8f;
+  background: linear-gradient(#9db1a5, #859d8f);
+  min-width: 1200px;
 }
 
 .wrap {
   margin: 0 auto;
   padding: 0 27px;
-  width: 1200px;
+  max-width: 1200px;
 
 }
 
@@ -63,6 +64,10 @@ img {
   border-radius: 5px;
 }
 .text-field::placeholder {
+  color: #999999;
+  font-weight: 400;
+}
+.text-field:-ms-input-placeholder {
   color: #999999;
   font-weight: 400;
 }
@@ -153,10 +158,13 @@ img {
   line-height: 16px;
   text-decoration: none;
 }
+.nav-select-link--active {
+  background-color: #f6b5a5;
+}
 .nav-select-item:first-child::after {
   position: absolute;
   content: "";
-  top: 38px;
+  top: 35px;
   left: 6px;
   width: 128px;
   height: 1px;
@@ -169,8 +177,8 @@ img {
 .nav-select-link:active{
   background-color: #f6b5a5;
 }
-.nav-select-link--active {
-  /* background-color: #d07058; */
+.nav-select-link--important {
+
   font-weight: 700;
 }
 
@@ -427,8 +435,8 @@ img {
   border-color: #ffbc9e;
 }
 
-.breadcrumbs-item span {
-  margin: 0 5px;
+.breadcrumbs-item .breadcrumbs-delimiter {
+ margin: 0 5px;
 }
 
 /*HEADER-CONTACT*/
@@ -440,13 +448,16 @@ img {
 .header-contact-time {
   margin: 0;
   margin-top: -5px;
+  margin-bottom: 3px;
   font-size: 14px;
   line-height: 16px;
 }
 .header-contact-tel {
   margin: 0;
-
+  margin-bottom: -4px;
 }
+
+
 .header-contact-link {
   text-decoration: none;
   color: #ffffff;
@@ -499,7 +510,7 @@ img {
   position: relative;
   z-index: 1;
   margin: 0 auto;
-  margin-top: 434px;
+  margin-top: 430px;
   margin-bottom: 38px;
   width: 680px;
   font-size: 60px;
@@ -626,7 +637,7 @@ img {
   border: none;
 }
 .filter-body {
-  padding: 8px 17px 7px 14px;
+  padding: 9px 17px 7px 13px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -641,7 +652,7 @@ img {
   align-items: center;
 }
 .filter-subtitle {
-  padding-left: 16px;
+  padding-left: 15px;
   font-size: 14px;
   line-height: 16px;
   font-weight: 500;
@@ -757,6 +768,10 @@ img {
   opacity: 1;
   outline: 1px solid #4D90FE;
 }
+.radio-input:disabled + .radio-indicator {
+  opacity: 0.4;
+  cursor: auto;
+}
 .radio-input + .radio-indicator {
   width: 20px;
   height: 20px;
@@ -775,11 +790,25 @@ img {
 
 
 .checkbox-label {
-  margin-left: 5px;
   position: relative;
   padding-left: 33px;
   opacity: 0.8;
   cursor: pointer;
+}
+.checkbox-item:nth-child(1) .checkbox-label{
+  margin-left: 3px;
+}
+.checkbox-item:nth-child(2) .checkbox-label{
+  margin-left: -1px;
+}
+.checkbox-item:nth-child(3) .checkbox-label{
+  margin-left: 2px;
+}
+.checkbox-item:nth-child(4) .checkbox-label{
+  margin-left: 3px;
+}
+.checkbox-item:nth-child(5) .checkbox-label{
+  margin-right: 2px;
 }
 .checkbox-label:hover {
   opacity: 1;
@@ -787,6 +816,10 @@ img {
 .checkbox-input:focus + .checkbox-indicator{
   opacity: 1;
   outline: 1px solid #4D90FE;
+}
+.checkbox-input:disabled + .checkbox-indicator{
+  opacity: 0.4;
+  cursor: auto;
 }
 .checkbox-input + .checkbox-indicator {
   width: 20px;
@@ -815,15 +848,16 @@ img {
 }
 
 .filter-btn {
-  margin-top: 12px;
-  padding: 6px 25px 9px 31px;;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 18px;
-  color: #ffffff;
-  border-radius: 30px;
-  border: 2px solid #ffffff;
-  background-color: rgba(255, 255, 255, 0.2);
+  margin-top: 9px;
+    padding: 7px 25px 9px 31px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 18px;
+    color: #ffffff;
+    border-radius: 30px;
+    border: 2px solid #ffffff;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin-right: -1px;
 }
 .filter-btn:hover,
 .filter-btn:focus {
@@ -840,7 +874,7 @@ img {
 /*PRODUCTS*/
 
 .products {
-  margin-bottom: 5px;
+  margin-bottom: 7px;
 }
 .products-list {
   list-style: none;
@@ -850,12 +884,14 @@ img {
   margin-right: -13px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: flex-start;
 }
 .products-item {
   margin-bottom: -44px;
-
   width: 25%;
+}
+.pt2{
+  padding-top: 2px;
 }
 .products-item:hover {
   background-color: rgba(248, 247, 244, 0.2);
@@ -872,7 +908,7 @@ img {
   margin: 0 auto;
   margin-top: 6px;
   width: 266px;
-  padding-bottom: 77px;
+  padding-bottom: 75px;
   text-align: center;
 }
 .product--hit::before {
@@ -887,7 +923,7 @@ img {
 }
 .product-price {
   margin: 0;
-  margin-top: -63px;
+  margin-top: -61px;
   margin-bottom: 20px;
   font-size: 30px;
   font-weight: 700;
@@ -898,7 +934,9 @@ img {
   font-size: 45px;
 }
 .product-link {
+  display: inline-block;
   color: #ffffff;
+  max-width: 257px;
   font-weight: 500;
   text-decoration: none;
 }
@@ -927,10 +965,11 @@ img {
 
 .store-desc{
   margin-bottom: 40px;
-  padding: 25px 25px 15px 20px;
+  padding: 27px 25px 15px 20px;
   width: 1146px;
   border-radius: 15px;
   color: #323232;
+  background-color: #f0e4cc;
   background-image: url('../img/backgrounds/wafer.jpg');
   background-position: 0 0;
   background-repeat: no-repeat;
@@ -989,6 +1028,7 @@ img {
   padding: 23px 20px;
   color: #323232;
   border-radius: 15px;
+  background-color: #ffffff;
   background-image: url('../img/backgrounds/strawberry.jpg');
   background-position: 50% 50%;
   background-size: cover;
@@ -1021,6 +1061,7 @@ img {
   padding: 4px 5px 5px 5px;
   color: #5a5a5a;
   border-radius: 15px;
+  background-color: #ffffff;
   background-image: url('../img/backgrounds/bg-post.svg');
   background-position: 50% 50%;
   background-size: cover;
@@ -1029,7 +1070,7 @@ img {
 .mailing-inner{
   width: 549px;
   min-height: 210px;
-  padding: 30px 20px 20px 20px;
+  padding: 30px 15px 20px 20px;
   border-radius: 10px;
   background-color: #f8f7f4;
   border: 1px solid #f8f7f4;
@@ -1039,18 +1080,18 @@ img {
   margin-bottom: 35px;
 }
 .mailing .btn {
-  padding: 10px 22px;
+  padding: 10px 15px 10px 15px;
   width: 129px;
 }
 .mailing .text-field {
   width: 368px;
-  margin-right: 5px;
+  margin-right: 8px;
 }
 
 /*MAP*/
 
 .map {
-  padding: 63px 0;
+  padding: 61px 0;
   margin: 0 auto;
   position: relative;
 }
@@ -1067,7 +1108,7 @@ img {
   position: relative;
   z-index: 5;
   margin-left: calc(50% + 270px);
-  padding: 30px 25px 38px 25px;
+  padding: 30px 25px 42px 25px;
   width: 302px;
   text-align: center;
   color: #323232;
@@ -1077,12 +1118,15 @@ img {
 .map-label {
   width: 175px;
   margin: 0;
-  margin-bottom: 5px;
+  margin-bottom: 3px;
   font-size: 14px;
   line-height: 20px;
 }
+.map-label--top {
+  width: 155px;
+}
 .map-label:last-child {
-  margin-bottom: 33px;
+  margin-bottom: 36px;
 }
 .map-wrap {
   text-align: left;
@@ -1121,18 +1165,23 @@ img {
 
 /*PAGINATION*/
 .pag {
-  margin-bottom: 30px;
+  margin-bottom: 27px;
 }
 
 .pag-list {
-  padding-top: 30px;
+  padding-top: 31px;
+  margin-right: -10px;
   display: flex;
   justify-content: flex-end;
   list-style: none;
 }
 .pag-item {
-  margin-left: 1px;
+  margin-left: 3px;
 }
+.pag-item:nth-child(3) {
+  margin-left: 0;
+}
+
 .pag-link,
 .pag-link-prev,
 .pag-link-next {
@@ -1148,11 +1197,17 @@ img {
   line-height: 18px;
   border-radius: 50%;
 }
+
+.pag-link-next {
+  margin-left: 3px;
+}
 .pag-link:hover {
   background-color: rgba(255, 255, 255, 0.2);
   color: #323232;
 }
 .pag-link--current {
+  width: 27px;
+  justify-content: center;
   background-color: rgba(255, 255, 255, 1);
   color: #323232;
 }
@@ -1182,7 +1237,7 @@ img {
   list-style: none;
 }
 .social-item {
-  margin-right: 10px;
+  margin-right: 11px;
 }
 .social-link {
   display: block;
@@ -1207,7 +1262,8 @@ img {
 }
 
 .additionally-list {
-  margin-right: 35px;
+  margin-right: 40px;
+  margin-top: 17px;
   padding: 0;
   list-style: none;
   column-count: 2;
@@ -1254,6 +1310,7 @@ img {
 
 .madein p {
   margin: 0;
+  margin-top: -4px;
 }
 .madein-descr, .madein-link {
   font-size: 12px;
@@ -1332,7 +1389,7 @@ img {
   width: 18px;
   height: 17px;
   padding: 0;
-  background-color: white;
+  background-color: #f8f7f4;
   border:none;
   cursor: pointer;
 }
@@ -1356,6 +1413,10 @@ img {
   resize: none;
 }
 .modal-feedback-message::placeholder {
+  color: #999999;
+  font-weight: 400;
+}
+.modal-feedback-message:-ms-input-placeholder {
   color: #999999;
   font-weight: 400;
 }
